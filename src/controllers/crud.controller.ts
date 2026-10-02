@@ -12,7 +12,7 @@ type CrudController = {
 
 const handleError = (res: Response, error: unknown, action: string) => {
   if (error instanceof Error && error.name === 'ValidationError') {
-    res.status(400).json({ error: `Datos inválidos al ${action}` })
+    res.status(400).json({ error: `Datos invalid al ${action}` })
     return
   }
 
@@ -36,7 +36,7 @@ export const createCrudController = <T>(
     const { id } = req.params
 
     if (!id || !isValidObjectId(id)) {
-      res.status(400).json({ error: 'El identificador no es válido' })
+      res.status(400).json({ error: 'El identificador no es vvlido' })
       return
     }
 
@@ -67,7 +67,7 @@ export const createCrudController = <T>(
     const { id } = req.params
 
     if (!id || !isValidObjectId(id)) {
-      res.status(400).json({ error: 'El identificador no es válido' })
+      res.status(400).json({ error: 'El identificador no es vvlido' })
       return
     }
 
@@ -92,7 +92,7 @@ export const createCrudController = <T>(
     const { id } = req.params
 
     if (!id || !isValidObjectId(id)) {
-      res.status(400).json({ error: 'El identificador no es válido' })
+      res.status(400).json({ error: 'El identificador no es valido' })
       return
     }
 

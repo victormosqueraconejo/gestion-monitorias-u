@@ -7,4 +7,4 @@ export const {
   create: createTutoringRequest,
   update: updateTutoringRequest,
   remove: deleteTutoringRequest,
-} = createCrudController(TutoringRequest, 'solicitud de tutoría')
+} = createCrudController(TutoringRequest, 'solicitud de tutoria')

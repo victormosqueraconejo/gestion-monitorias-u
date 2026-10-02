@@ -7,4 +7,4 @@ export const {
   create: createAcademicReport,
   update: updateAcademicReport,
   remove: deleteAcademicReport,
-} = createCrudController(AcademicReport, 'reporte académico')
+} = createCrudController(AcademicReport, 'reporte academico')

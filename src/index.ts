@@ -12,6 +12,6 @@ mongoose.connect(MONGO_URI)
   .then(() => {
     console.log('Base de datos conectada');
     
-    app.listen(PORT, () => console.log(`Server UP en puerto ${PORT}`)); 
+    app.listen(PORT, () => console.log(`Servidor iniciado en puerto ${PORT}`));
   })
-  .catch(err => console.error('Error de conexión:', err));
+  .catch(err => console.error('Error de conexion:', err));
